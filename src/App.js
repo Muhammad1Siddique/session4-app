@@ -1,25 +1,16 @@
-import logo from './logo.svg';
+import React, {useState} from 'react'
 import './App.css';
+import {Message} from './Message.js'
 
 function App() {
+  let [count, setCount] = useState(1);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Message counter={count}/>
+      <button onClick={()=>setCount(++count)}>Click to Increment Value</button>
     </div>
-  );
-}
+  
 
+  )
+  }
 export default App;
