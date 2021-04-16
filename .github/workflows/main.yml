@@ -37,10 +37,12 @@ jobs:
         with:
           cmd: install #npm install/ yarn install
           
+      - name: create build
+        run: yarn build
            
       - name: Installing Surge
         run: npm install -g surge
         
       - name: deploy on Surge
-        run: surge ./build http://bcsession4.surge.sh/ --token ${{ secrets.BC_TOKEN}}
+        run: surge ./build http://bcsessionld.surge.sh --token ${{secrets.BC_TOKEN}}
       
