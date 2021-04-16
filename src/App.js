@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Message counter={count}/>
-      <button onClick={()=>setCount(++count)}>Click to Increment Value</button>
+      <button onClick={()=>setCount(++count)}>Click to Increment</button>
     </div>
   
 
