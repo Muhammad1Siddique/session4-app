@@ -33,6 +33,12 @@
 .daylight{
   background:yellow;
 }
+
+.btnstyle{
+  margin:1rem;
+  background:seagreen;
+  color:white;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
