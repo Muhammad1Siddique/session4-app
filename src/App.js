@@ -9,8 +9,8 @@ function App() {
     <div className={`${isMorning ? 'daylight':'box'}`}>
       <h2>Good {isMorning ? 'Morning' : 'Night'}</h2>
       <Message counter={count}/>
-      <button className="w3-button w3-teal btnstyle" onClick={()=>setCount(++count)}>Click to Increment</button>
-      <button className="w3-button w3-teal btnstyle" onClick={()=>setMorning(!isMorning)}>Check Status</button>
+      <button className="w3-button w3-deep-purple btnstyle" onClick={()=>setCount(++count)}>Click to Increment</button>
+      <button className="w3-button w3-deep-purple btnstyle" onClick={()=>setMorning(!isMorning)}>Check Status</button>
     </div>
   )
   }
